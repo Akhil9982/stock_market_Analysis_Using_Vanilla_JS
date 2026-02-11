@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Stock Market Analysis</h1>
+    </header>
+    <div class="container">
+        <main class="chart-section">
+            <div class="chart-container">
+                <div id="chart-line">
+                    <canvas id="stockChart" width="700" height="150"></canvas>
+                    <div id="canva-tool"></div>
+                    <div id="x-go"></div>
+                </div>
+                <div class="time-filters">
+                    <button id="1Month">1 Month</button>
+                    <button id="3Month">3 Month</button>
+                    <button id="1year">1 Year</button>
+                    <button id="5year">5 Year</button>
+                </div>
+            </div>
+            <div class="stock-description">
+                <div>
+                    <span id="company-name"></span>&nbsp;&nbsp;
+                    <span id="company-profit"></span>&nbsp;&nbsp;
+                    <span id="profit-value"></span>
+                </div>
+                <p></p>
+            </div>
+        </main>
+        <aside class="stock-list">
+        </aside>
+    </div>
+</body>
+</html>
